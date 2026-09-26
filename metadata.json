@@ -1,0 +1,6 @@
+{
+  "name": "For Irene - Four Weeks of Gratitude",
+  "description": "A heartfelt tribute note and poem for Irene celebrating four unforgettable weeks with warm golden accents and interactive glowing lamp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

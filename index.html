@@ -1,0 +1,1561 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Irene - Four Weeks of Gratitude</title>
+    <meta
+      name="description"
+      content="A heartfelt tribute note and poem for Irene celebrating four unforgettable weeks with warm golden accents and interactive glowing lamp."
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="dark" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💫</text></svg>"
+    />
+
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="For Irene - Four Weeks of Gratitude" />
+    <meta
+      property="og:description"
+      content="A heartfelt tribute note and poem for Irene celebrating four unforgettable weeks with warm golden accents and interactive glowing lamp."
+    />
+    <meta property="og:site_name" content="For Irene" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="For Irene - Four Weeks of Gratitude" />
+    <meta
+      name="twitter:description"
+      content="A heartfelt tribute note and poem for Irene celebrating four unforgettable weeks with warm golden accents and interactive glowing lamp."
+    />
+
+    <!-- Schema.org Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "For Irene - Four Weeks of Gratitude",
+        "description": "A heartfelt tribute note and poem for Irene celebrating four unforgettable weeks with warm golden accents and interactive glowing lamp.",
+        "inLanguage": "en-US",
+        "mainEntity": {
+          "@type": "CreativeWork",
+          "name": "You Raised Your Lamp",
+          "headline": "A small note of gratitude for four unforgettable weeks",
+          "author": {
+            "@type": "Person",
+            "name": "Anonymous"
+          },
+          "text": "We stood right at the crossroad of my mind, Leaving my messy ex-boy thoughts behind. I lingered in the shadows, lost and stuck, Wondering if my heart was out of luck. Then you stepped up and held a golden light, To chase away the drama of the night! You listened to my rants, you held the floor, And had me laughing till my chest was sore. I looked into your face and saw it clear— The sweetest road was staying right next here! So thank you, Irene, for that glowing spark: You raised your lamp and pulled me from the dark!"
+        }
+      }
+    </script>
+
+    <!-- Google Fonts: Editorial Serif, Title, Refined Sans & Handwritten Caveat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                DEFAULT: '#FFD100',
+                50: '#fffef0',
+                100: '#fffab8',
+                200: '#fff375',
+                300: '#ffe633',
+                400: '#FFD100',
+                500: '#e6bc00',
+                600: '#cca700',
+                700: '#997d00',
+                800: '#665400',
+                900: '#332a00',
+              },
+              charcoal: {
+                DEFAULT: '#202020',
+                50: '#8a8a8a',
+                100: '#6e6e6e',
+                200: '#545454',
+                300: '#3d3d3d',
+                400: '#2c2c2c',
+                500: '#202020',
+                600: '#1b1b1b',
+                700: '#161616',
+                800: '#121212',
+                900: '#0d0d0d',
+              },
+              amber: {
+                50: '#fffef0',
+                100: '#fffab8',
+                200: '#fff275',
+                300: '#ffe447',
+                400: '#FFD100', // PRIMARY #FFD100
+                500: '#e6bd00',
+                600: '#cca700',
+                700: '#997e00',
+                800: '#665400',
+                900: '#332a00',
+                950: '#1a1500',
+              },
+              neutral: {
+                700: '#333333',
+                800: '#262626',
+                900: '#202020', // PRIMARY #202020
+                950: '#141414',
+              },
+              stone: {
+                700: '#383838',
+                800: '#282828',
+                900: '#202020', // PRIMARY #202020
+                950: '#121212',
+              },
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+              cinzel: ['"Cinzel"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              cursive: ['"Sacramento"', 'cursive'],
+              handwriting: ['"Caveat"', 'cursive'],
+            },
+            boxShadow: {
+              'lamp-soft':
+                '0 0 50px -10px rgba(255, 209, 0, 0.35), 0 0 100px -20px rgba(255, 209, 0, 0.2)',
+              'lamp-intense':
+                '0 0 70px 15px rgba(255, 209, 0, 0.5), 0 0 140px 40px rgba(255, 209, 0, 0.28), inset 0 0 40px rgba(255, 209, 0, 0.12)',
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'float': 'floating 3s ease-in-out infinite',
+              'shimmer': 'shimmer 2.5s linear infinite',
+              'flicker': 'flicker 2s infinite alternate',
+            },
+            keyframes: {
+              floating: {
+                '0%, 100%': { transform: 'translateY(0px)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+              shimmer: {
+                '0%': { backgroundPosition: '-200% 0' },
+                '100%': { backgroundPosition: '200% 0' },
+              },
+              flicker: {
+                '0%, 100%': { opacity: '0.9', transform: 'scale(1)' },
+                '50%': { opacity: '0.7', transform: 'scale(0.97)' },
+                '70%': { opacity: '1', transform: 'scale(1.03)' },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Canvas Confetti CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+    <style>
+      /* Custom fine-grain styling */
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #000000;
+      }
+      .font-poem {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+      .font-title {
+        font-family: 'Cinzel', serif;
+      }
+      .font-script {
+        font-family: 'Sacramento', cursive;
+      }
+
+      /* Glow beam radiating from the lamp */
+      .lamp-beam {
+        background: radial-gradient(
+          ellipse at 50% 0%,
+          rgba(255, 209, 0, 0.38) 0%,
+          rgba(255, 209, 0, 0.16) 45%,
+          transparent 75%
+        );
+        opacity: 0;
+        transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s ease-out;
+        transform: scale(0.9) translateY(-10px);
+      }
+      .lamp-active .lamp-beam {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+
+      /* Glowing border and card aura */
+      .poem-card {
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .lamp-active .poem-card {
+        border-color: rgba(255, 209, 0, 0.6);
+        box-shadow: 0 0 80px 12px rgba(255, 209, 0, 0.38), 0 0 150px 30px rgba(255, 209, 0, 0.2), inset 0 0 50px rgba(255, 209, 0, 0.1);
+      }
+
+      /* Stanza hover and reading flow */
+      .poem-line {
+        transition: transform 0.3s ease, color 0.3s ease;
+      }
+      .poem-card:hover .poem-line {
+        color: #ffffff;
+      }
+
+      /* Golden text shimmer */
+      .shimmer-text {
+        background: linear-gradient(
+          90deg,
+          #FFD100 0%,
+          #fff6a3 25%,
+          #cca700 50%,
+          #fff6a3 75%,
+          #FFD100 100%
+        );
+        background-size: 200% auto;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+      }
+
+      /* Polaroid Snapshot Section */
+      .polaroid-card {
+        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1),
+                    box-shadow 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                    border-color 0.5s ease,
+                    filter 0.5s ease,
+                    opacity 0.6s ease;
+        transform: translateY(0) scale(0.96);
+        opacity: 0.75;
+        filter: brightness(0.88) contrast(0.98);
+      }
+
+      /* Hover micro-interaction on polaroids */
+      .polaroid-card:hover {
+        transform: translateY(-10px) scale(1.06) rotate(0deg) !important;
+        z-index: 30;
+        opacity: 1 !important;
+        filter: brightness(1.08) contrast(1.02) !important;
+        box-shadow: 0 0 35px 8px rgba(255, 209, 0, 0.5), 0 20px 30px -8px rgba(0, 0, 0, 0.8) !important;
+      }
+
+      /* When the lamp is active: Pop up with a soft golden glow & staggered emergence */
+      .lamp-active .polaroid-card {
+        opacity: 1;
+        filter: brightness(1.04) contrast(1.02);
+        box-shadow: 0 0 28px 5px rgba(255, 209, 0, 0.42), 0 16px 26px -6px rgba(0, 0, 0, 0.7);
+        border-color: rgba(255, 209, 0, 0.55);
+      }
+
+      .lamp-active .polaroid-card:nth-child(1) {
+        transform: translateY(-8px) rotate(-2.5deg) scale(1.02);
+        transition-delay: 80ms;
+      }
+      .lamp-active .polaroid-card:nth-child(2) {
+        transform: translateY(-12px) rotate(2deg) scale(1.04);
+        transition-delay: 160ms;
+      }
+      .lamp-active .polaroid-card:nth-child(3) {
+        transform: translateY(-8px) rotate(-1.5deg) scale(1.02);
+        transition-delay: 240ms;
+      }
+      .lamp-active .polaroid-card:nth-child(4) {
+        transform: translateY(-12px) rotate(3deg) scale(1.04);
+        transition-delay: 320ms;
+      }
+
+      /* Glowing aura inside each polaroid photo frame when lamp is active */
+      .polaroid-photo-glow {
+        opacity: 0;
+        transition: opacity 0.8s ease;
+      }
+      .lamp-active .polaroid-photo-glow {
+        opacity: 0.38;
+      }
+
+      /* Drifting Golden Hearts around 'For Irene' */
+      @keyframes floatUpHeart {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 0, 0) scale(0.35) rotate(var(--rot-start, 0deg));
+        }
+        15% {
+          opacity: 0.95;
+          transform: translate3d(var(--drift-x1, 5px), -18px, 0) scale(1) rotate(var(--rot-mid, 8deg));
+        }
+        60% {
+          opacity: 0.85;
+          transform: translate3d(var(--drift-x2, -6px), -55px, 0) scale(1.08) rotate(var(--rot-mid2, -6deg));
+        }
+        100% {
+          opacity: 0;
+          transform: translate3d(var(--drift-x3, 10px), -105px, 0) scale(0.75) rotate(var(--rot-end, 12deg));
+        }
+      }
+
+      .drifting-heart {
+        position: absolute;
+        pointer-events: none;
+        will-change: transform, opacity;
+        animation: floatUpHeart var(--duration, 3s) cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        filter: drop-shadow(0 0 6px rgba(255, 209, 0, 0.85)) drop-shadow(0 0 14px rgba(255, 209, 0, 0.45));
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #000000;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFD100;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #ffe347;
+      }
+    </style>
+  </head>
+
+  <body
+    class="min-h-screen relative overflow-x-hidden bg-black text-stone-200 antialiased selection:bg-[#FFD100]/30 selection:text-[#FFD100]"
+  >
+    <!-- Background Canvas for Gentle Star / Ember Particles -->
+    <canvas id="particleCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+
+    <!-- Ambient Radial Glow Overlays -->
+    <div
+      class="fixed -top-40 left-1/2 -translate-x-1/2 w-[700px] h-[700px] bg-[#FFD100]/10 rounded-full blur-[140px] pointer-events-none z-0"
+    ></div>
+    <div
+      id="dynamicAmbientGlow"
+      class="fixed top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[900px] h-[900px] bg-[#FFD100]/0 rounded-full blur-[160px] pointer-events-none transition-all duration-1000 z-0"
+    ></div>
+
+    <!-- FLOATING BADGE: "Four Weeks of Gratitude" -->
+    <aside
+      id="floatingBadge"
+      aria-label="Milestone announcement"
+      class="fixed top-5 right-5 sm:top-7 sm:right-7 z-50 flex items-center gap-2.5 px-4 py-2 rounded-full backdrop-blur-md bg-[#202020]/90 border border-[#FFD100]/35 shadow-lg shadow-black/50 hover:border-[#FFD100] hover:shadow-[#FFD100]/25 hover:scale-105 transition-all duration-300 group cursor-default"
+    >
+      <span class="relative flex h-2.5 w-2.5">
+        <span
+          class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FFD100] opacity-75"
+        ></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-[#FFD100]"></span>
+      </span>
+      <div class="flex items-center gap-1.5 text-xs sm:text-sm font-medium text-[#FFD100]">
+        <svg
+          class="w-3.5 h-3.5 text-[#FFD100] transition-transform group-hover:rotate-12 duration-300"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+          ></path>
+        </svg>
+        <span class="tracking-wide">Four Weeks of Gratitude</span>
+      </div>
+      <span class="hidden sm:inline-block text-[11px] text-[#FFD100]/70 font-serif italic pl-1 border-l border-[#FFD100]/30">
+        1 Month Milestone
+      </span>
+    </aside>
+
+    <!-- Sound & Ambient Controller (Top-left) -->
+    <div class="fixed top-5 left-5 sm:top-7 sm:left-7 z-50 flex items-center gap-2">
+      <button
+        id="soundToggleBtn"
+        type="button"
+        title="Toggle Golden Chime"
+        class="flex items-center gap-2 px-3 py-1.5 rounded-full backdrop-blur-md bg-[#202020]/90 border border-[#FFD100]/30 text-xs text-[#FFD100] hover:text-[#FFD100] hover:border-[#FFD100] transition-colors"
+      >
+        <span id="soundIcon" class="text-sm">🔔</span>
+        <span id="soundLabel" class="hidden sm:inline">Chime Ready</span>
+      </button>
+    </div>
+
+    <!-- MAIN PAGE CONTAINER -->
+    <main class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 flex flex-col items-center">
+      
+      <!-- HERO SECTION -->
+      <header class="text-center mb-10 sm:mb-14 max-w-2xl mx-auto flex flex-col items-center">
+        <!-- Gentle Kicker -->
+        <p class="text-xs sm:text-sm tracking-[0.25em] uppercase text-[#FFD100]/90 font-semibold mb-3">
+          A Heartfelt Tribute
+        </p>
+
+        <!-- Primary Header with Hearts Anchor -->
+        <div class="relative inline-block max-w-full">
+          <h1
+            id="heroTitle"
+            class="font-title text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[#FFD100] via-yellow-100 to-[#FFD100] drop-shadow-sm mb-4"
+          >
+            For Irene 💫
+          </h1>
+          <!-- Drifting Hearts Spawn Container -->
+          <div
+            id="titleHeartsContainer"
+            class="absolute inset-0 pointer-events-none overflow-visible z-20"
+            aria-hidden="true"
+          ></div>
+        </div>
+
+        <!-- Subtitle -->
+        <p class="text-base sm:text-xl text-stone-300 font-serif italic max-w-xl mx-auto leading-relaxed">
+          A small note of gratitude for four unforgettable weeks.
+        </p>
+
+        <!-- Elegant Decorative Divider -->
+        <div class="flex items-center justify-center gap-4 w-full mt-7 text-[#FFD100]/50">
+          <div class="h-[1px] w-20 sm:w-32 bg-gradient-to-r from-transparent via-[#FFD100]/40 to-[#FFD100]/80"></div>
+          <div class="flex items-center gap-1.5 text-[#FFD100]">
+            <span class="text-xs">✦</span>
+            <span class="text-sm">❖</span>
+            <span class="text-xs">✦</span>
+          </div>
+          <div class="h-[1px] w-20 sm:w-32 bg-gradient-to-l from-transparent via-[#FFD100]/40 to-[#FFD100]/80"></div>
+        </div>
+      </header>
+
+      <!-- MAIN POEM CONTAINER (Glassmorphic Card) -->
+      <section
+        id="poemContainer"
+        class="poem-card relative w-full max-w-2xl backdrop-blur-xl bg-[#202020]/85 border border-[#FFD100]/30 rounded-3xl p-7 sm:p-12 shadow-2xl shadow-black/80 overflow-hidden"
+      >
+        <!-- The Radiating Beam from the Lamp -->
+        <div
+          id="lampBeam"
+          class="lamp-beam absolute inset-0 pointer-events-none"
+        ></div>
+
+        <!-- Overhead Lantern Illustration / Icon -->
+        <div class="relative z-10 flex flex-col items-center mb-8">
+          <div class="w-1 h-6 bg-gradient-to-b from-[#FFD100]/40 to-[#FFD100] rounded-full mb-1"></div>
+          
+          <div
+            id="lanternVisual"
+            class="relative cursor-pointer group"
+            title="Click to light the lamp"
+          >
+            <!-- Outer halo / aura when lit -->
+            <div
+              id="lanternHalo"
+              class="absolute -inset-4 bg-[#FFD100]/0 rounded-full blur-xl transition-all duration-700 pointer-events-none"
+            ></div>
+
+            <!-- Lantern housing -->
+            <div
+              class="relative w-12 h-14 rounded-2xl bg-[#202020] border border-[#FFD100]/40 p-2 flex flex-col items-center justify-center shadow-lg transition-transform group-hover:scale-110 group-active:scale-95 duration-300"
+            >
+              <!-- Lamp Flame / Bulb -->
+              <div
+                id="lanternCore"
+                class="w-5 h-7 rounded-full bg-gradient-to-t from-amber-600 via-[#FFD100] to-yellow-100 shadow-[0_0_14px_rgba(255,209,0,0.65)] animate-flicker transition-all duration-700"
+              ></div>
+            </div>
+          </div>
+
+          <span
+            id="lampStatusIndicator"
+            class="text-[11px] tracking-widest uppercase text-[#FFD100]/70 mt-2 font-medium transition-colors duration-500"
+          >
+            Gentle Ember
+          </span>
+        </div>
+
+        <!-- POEM TEXT: Displayed line-by-line with romantic typography -->
+        <article class="relative z-10 space-y-7 sm:space-y-9 text-center font-poem">
+          
+          <!-- Stanza 1 -->
+          <div class="group/stanza space-y-2">
+            <span class="block text-[11px] tracking-widest text-[#FFD100]/60 uppercase font-sans mb-1">
+              Part I
+            </span>
+            <p class="poem-line text-xl sm:text-2xl lg:text-3xl text-stone-200/90 leading-relaxed sm:leading-loose tracking-wide">
+              We stood right at the crossroad of my mind,<br />
+              Leaving my messy ex-boy thoughts behind.<br />
+              I lingered in the shadows, lost and stuck,<br />
+              Wondering if my heart was out of luck.
+            </p>
+          </div>
+
+          <!-- Subtle Stanza Divider -->
+          <div class="flex items-center justify-center gap-2 text-[#FFD100]/35">
+            <span class="w-8 h-[1px] bg-[#FFD100]/25"></span>
+            <span class="text-xs">✦</span>
+            <span class="w-8 h-[1px] bg-[#FFD100]/25"></span>
+          </div>
+
+          <!-- Stanza 2 -->
+          <div class="group/stanza space-y-2">
+            <span class="block text-[11px] tracking-widest text-[#FFD100]/60 uppercase font-sans mb-1">
+              Part II
+            </span>
+            <p class="poem-line text-xl sm:text-2xl lg:text-3xl text-stone-200/90 leading-relaxed sm:leading-loose tracking-wide">
+              Then you stepped up and held a golden light,<br />
+              To chase away the drama of the night!<br />
+              You listened to my rants, you held the floor,<br />
+              And had me laughing till my chest was sore.
+            </p>
+          </div>
+
+          <!-- Subtle Stanza Divider -->
+          <div class="flex items-center justify-center gap-2 text-[#FFD100]/35">
+            <span class="w-8 h-[1px] bg-[#FFD100]/25"></span>
+            <span class="text-xs">✦</span>
+            <span class="w-8 h-[1px] bg-[#FFD100]/25"></span>
+          </div>
+
+          <!-- Stanza 3 -->
+          <div class="group/stanza space-y-2">
+            <span class="block text-[11px] tracking-widest text-[#FFD100]/60 uppercase font-sans mb-1">
+              Part III
+            </span>
+            <p class="poem-line text-xl sm:text-2xl lg:text-3xl text-stone-200/90 leading-relaxed sm:leading-loose tracking-wide font-medium">
+              I looked into your face and saw it clear—<br />
+              The sweetest road was staying right next here!<br />
+              <span class="text-[#FFD100] font-semibold drop-shadow-sm">
+                So thank you, Irene, for that glowing spark:
+              </span><br />
+              <span class="text-yellow-100 font-bold drop-shadow-md">
+                You raised your lamp and pulled me from the dark!
+              </span>
+            </p>
+          </div>
+
+        </article>
+
+        <!-- Decorative Bottom Card Accent -->
+        <div class="mt-9 flex items-center justify-center gap-3 text-[#FFD100]/50 text-xs">
+          <span>──</span>
+          <span class="font-serif italic text-[#FFD100]/80">28 Days of Sunshine</span>
+          <span>──</span>
+        </div>
+      </section>
+
+      <!-- SNAPSHOT SECTION: Small Polaroid Grid Below the Poem -->
+      <section
+        id="snapshotSection"
+        aria-label="Four Weeks of Snapshots"
+        class="w-full max-w-2xl mt-12 mb-4 flex flex-col items-center"
+      >
+        <!-- Header -->
+        <div class="text-center mb-6">
+          <div
+            class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFD100]/10 border border-[#FFD100]/30 text-[11px] uppercase tracking-widest text-[#FFD100] font-semibold mb-2"
+          >
+            <span>📷</span>
+            <span>Four Weeks • Snapshots</span>
+          </div>
+          <h2
+            class="font-title text-xl sm:text-2xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#FFD100] via-yellow-100 to-[#FFD100]"
+          >
+            Moments Along The Road
+          </h2>
+          <p class="text-xs sm:text-sm text-stone-400 font-serif italic mt-1 max-w-md mx-auto">
+            Small polaroids that pop into radiant light when the lamp is lifted.
+          </p>
+        </div>
+
+        <!-- CSS Grid of Small Polaroids -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5 w-full">
+          
+          <!-- Polaroid 1: The Crossroad -->
+          <article
+            class="polaroid-card group relative bg-stone-100/95 text-stone-900 p-2.5 pb-4 rounded-sm shadow-xl border border-stone-300/80 -rotate-2 cursor-pointer select-none"
+            data-week="Week 1"
+            data-title="The Crossroad"
+            data-date="Week 1 • First Spark"
+            data-quote="Standing right at the edge of past thoughts, unsure where the heart was heading until you walked in and made the path simple."
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-amber-200/70 border border-amber-300/40 rounded-xs -rotate-2 backdrop-blur-xs shadow-xs z-10 pointer-events-none"
+            ></div>
+
+            <!-- Polaroid Photo Frame -->
+            <div
+              class="relative aspect-[4/3] w-full rounded-xs overflow-hidden bg-neutral-950 border border-stone-300/80 shadow-inner flex items-center justify-center"
+            >
+              <!-- Photo Golden Glow overlay when lamp is active -->
+              <div
+                class="polaroid-photo-glow absolute inset-0 bg-gradient-to-t from-amber-500/40 to-transparent pointer-events-none z-10"
+              ></div>
+
+              <!-- Vector Scene: The Crossroad & Stars -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-stone-950 via-amber-950/70 to-stone-900 flex items-center justify-center p-2"
+              >
+                <svg
+                  viewBox="0 0 120 90"
+                  class="w-full h-full text-amber-300 opacity-90 transition-transform duration-500 group-hover:scale-105"
+                  fill="none"
+                >
+                  <!-- Sky & Stars -->
+                  <circle cx="20" cy="18" r="1.5" fill="#fde047" opacity="0.8" />
+                  <circle cx="85" cy="14" r="1" fill="#fef08a" opacity="0.7" />
+                  <circle cx="105" cy="28" r="1.5" fill="#fde047" opacity="0.8" />
+                  <circle cx="45" cy="24" r="1" fill="#fef08a" opacity="0.5" />
+                  <!-- Distant horizon glow -->
+                  <circle cx="60" cy="48" r="16" fill="url(#crossGlow)" opacity="0.45" />
+                  <!-- Crossroads fork -->
+                  <path
+                    d="M15 80 L60 48 L105 80"
+                    stroke="#f59e0b"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M60 48 L60 78"
+                    stroke="#fef08a"
+                    stroke-width="1.8"
+                    stroke-dasharray="3 3"
+                  />
+                  <!-- Small roadside guidepost -->
+                  <path d="M42 66 L42 52 L50 49 L42 46" stroke="#fbbf24" stroke-width="1.5" />
+                  <defs>
+                    <radialGradient id="crossGlow">
+                      <stop offset="0%" stop-color="#fbbf24" />
+                      <stop offset="100%" stop-color="transparent" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <span
+                class="absolute bottom-1 right-1.5 text-[9px] font-sans font-semibold text-amber-300/90 bg-black/70 px-1 py-0.5 rounded"
+              >
+                W1
+              </span>
+            </div>
+
+            <!-- Polaroid Handwritten Caption -->
+            <div class="pt-2 text-center">
+              <p
+                class="font-handwriting text-base text-stone-900 font-bold leading-tight group-hover:text-amber-800 transition-colors"
+              >
+                The Crossroad
+              </p>
+              <p class="text-[10px] text-stone-500 font-sans tracking-tight">Day 01 • First Step</p>
+            </div>
+          </article>
+
+          <!-- Polaroid 2: Midnight Rants -->
+          <article
+            class="polaroid-card group relative bg-stone-100/95 text-stone-900 p-2.5 pb-4 rounded-sm shadow-xl border border-stone-300/80 rotate-2 cursor-pointer select-none"
+            data-week="Week 2"
+            data-title="Midnight Rants"
+            data-date="Week 2 • Late Night Tea"
+            data-quote="Holding the floor while I let every frantic thought out. You listened without judgment and gave me calm in the chaos."
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-amber-200/70 border border-amber-300/40 rounded-xs rotate-3 backdrop-blur-xs shadow-xs z-10 pointer-events-none"
+            ></div>
+
+            <!-- Polaroid Photo Frame -->
+            <div
+              class="relative aspect-[4/3] w-full rounded-xs overflow-hidden bg-neutral-950 border border-stone-300/80 shadow-inner flex items-center justify-center"
+            >
+              <div
+                class="polaroid-photo-glow absolute inset-0 bg-gradient-to-t from-amber-500/40 to-transparent pointer-events-none z-10"
+              ></div>
+
+              <!-- Vector Scene: Tea Mugs & Crescent Moon -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-stone-950 via-neutral-900 to-amber-950/70 flex items-center justify-center p-2"
+              >
+                <svg
+                  viewBox="0 0 120 90"
+                  class="w-full h-full text-amber-300 opacity-90 transition-transform duration-500 group-hover:scale-105"
+                  fill="none"
+                >
+                  <!-- Crescent Moon -->
+                  <path
+                    d="M88 18 A 10 10 0 0 1 80 32 A 10 10 0 1 0 88 18 Z"
+                    fill="#fef08a"
+                    opacity="0.9"
+                  />
+                  <!-- Small stars -->
+                  <circle cx="28" cy="20" r="1.2" fill="#fde047" opacity="0.8" />
+                  <circle cx="48" cy="14" r="1" fill="#fef08a" opacity="0.6" />
+                  <!-- Warm Tea Mugs -->
+                  <rect
+                    x="40"
+                    y="50"
+                    width="18"
+                    height="22"
+                    rx="3"
+                    fill="#78350f"
+                    stroke="#fbbf24"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M58 56 C63 56 63 64 58 64"
+                    stroke="#fbbf24"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="64"
+                    y="53"
+                    width="16"
+                    height="19"
+                    rx="3"
+                    fill="#451a03"
+                    stroke="#f59e0b"
+                    stroke-width="1.5"
+                  />
+                  <path
+                    d="M80 58 C84 58 84 65 80 65"
+                    stroke="#f59e0b"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <!-- Steam swirls -->
+                  <path
+                    d="M48 44 Q51 38 48 32"
+                    stroke="#fbbf24"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    opacity="0.8"
+                  />
+                  <path
+                    d="M72 47 Q69 41 72 35"
+                    stroke="#fef08a"
+                    stroke-width="1.3"
+                    stroke-linecap="round"
+                    opacity="0.8"
+                  />
+                </svg>
+              </div>
+
+              <span
+                class="absolute bottom-1 right-1.5 text-[9px] font-sans font-semibold text-amber-300/90 bg-black/70 px-1 py-0.5 rounded"
+              >
+                W2
+              </span>
+            </div>
+
+            <!-- Polaroid Handwritten Caption -->
+            <div class="pt-2 text-center">
+              <p
+                class="font-handwriting text-base text-stone-900 font-bold leading-tight group-hover:text-amber-800 transition-colors"
+              >
+                Midnight Rants
+              </p>
+              <p class="text-[10px] text-stone-500 font-sans tracking-tight">Warm tea & patience</p>
+            </div>
+          </article>
+
+          <!-- Polaroid 3: Laughs Till Sore -->
+          <article
+            class="polaroid-card group relative bg-stone-100/95 text-stone-900 p-2.5 pb-4 rounded-sm shadow-xl border border-stone-300/80 -rotate-1 cursor-pointer select-none"
+            data-week="Week 3"
+            data-title="Laughs Till Sore"
+            data-date="Week 3 • Chest Sore"
+            data-quote="Laughing until neither of us could catch our breath. Turning ordinary moments into pure golden memories that ache in the best way."
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-amber-200/70 border border-amber-300/40 rounded-xs -rotate-1 backdrop-blur-xs shadow-xs z-10 pointer-events-none"
+            ></div>
+
+            <!-- Polaroid Photo Frame -->
+            <div
+              class="relative aspect-[4/3] w-full rounded-xs overflow-hidden bg-neutral-950 border border-stone-300/80 shadow-inner flex items-center justify-center"
+            >
+              <div
+                class="polaroid-photo-glow absolute inset-0 bg-gradient-to-t from-amber-500/40 to-transparent pointer-events-none z-10"
+              ></div>
+
+              <!-- Vector Scene: Spark Burst & Laughter -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-stone-900 via-amber-950/80 to-stone-950 flex items-center justify-center p-2"
+              >
+                <svg
+                  viewBox="0 0 120 90"
+                  class="w-full h-full text-amber-300 opacity-90 transition-transform duration-500 group-hover:scale-105"
+                  fill="none"
+                >
+                  <circle cx="60" cy="45" r="18" fill="url(#laughGlow)" opacity="0.5" />
+                  <!-- Radiating sunshine sparks -->
+                  <path
+                    d="M60 14 L60 22 M60 68 L60 76 M28 45 L36 45 M84 45 L92 45"
+                    stroke="#fbbf24"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M38 23 L44 29 M76 61 L82 67 M82 23 L76 29 M38 67 L44 61"
+                    stroke="#fef08a"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <!-- Joyful smile & closed happy eyes -->
+                  <path
+                    d="M48 42 Q52 38 56 42"
+                    stroke="#fbbf24"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M64 42 Q68 38 72 42"
+                    stroke="#fbbf24"
+                    stroke-width="2.2"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M50 51 Q60 61 70 51"
+                    stroke="#f59e0b"
+                    stroke-width="2.6"
+                    stroke-linecap="round"
+                  />
+                  <defs>
+                    <radialGradient id="laughGlow">
+                      <stop offset="0%" stop-color="#fde047" />
+                      <stop offset="100%" stop-color="transparent" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <span
+                class="absolute bottom-1 right-1.5 text-[9px] font-sans font-semibold text-amber-300/90 bg-black/70 px-1 py-0.5 rounded"
+              >
+                W3
+              </span>
+            </div>
+
+            <!-- Polaroid Handwritten Caption -->
+            <div class="pt-2 text-center">
+              <p
+                class="font-handwriting text-base text-stone-900 font-bold leading-tight group-hover:text-amber-800 transition-colors"
+              >
+                Laughs Till Sore
+              </p>
+              <p class="text-[10px] text-stone-500 font-sans tracking-tight">Pure comedy & joy</p>
+            </div>
+          </article>
+
+          <!-- Polaroid 4: The Golden Lamp -->
+          <article
+            class="polaroid-card group relative bg-stone-100/95 text-stone-900 p-2.5 pb-4 rounded-sm shadow-xl border border-stone-300/80 rotate-3 cursor-pointer select-none"
+            data-week="Week 4"
+            data-title="The Golden Lamp"
+            data-date="Week 4 • Glowing Spark"
+            data-quote="You raised your lamp and pulled me from the dark. Four weeks that proved the sweetest road was right here by your side."
+          >
+            <!-- Washi tape at top -->
+            <div
+              class="absolute -top-2.5 left-1/2 -translate-x-1/2 w-8 h-3.5 bg-amber-200/70 border border-amber-300/40 rounded-xs rotate-2 backdrop-blur-xs shadow-xs z-10 pointer-events-none"
+            ></div>
+
+            <!-- Polaroid Photo Frame -->
+            <div
+              class="relative aspect-[4/3] w-full rounded-xs overflow-hidden bg-neutral-950 border border-stone-300/80 shadow-inner flex items-center justify-center"
+            >
+              <div
+                class="polaroid-photo-glow absolute inset-0 bg-gradient-to-t from-amber-500/40 to-transparent pointer-events-none z-10"
+              ></div>
+
+              <!-- Vector Scene: Radiant Lantern -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-stone-950 via-neutral-900 to-amber-950 flex items-center justify-center p-2"
+              >
+                <svg
+                  viewBox="0 0 120 90"
+                  class="w-full h-full text-amber-400 opacity-90 transition-transform duration-500 group-hover:scale-105"
+                  fill="none"
+                >
+                  <!-- Lantern loop -->
+                  <path
+                    d="M52 24 C52 16 68 16 68 24"
+                    stroke="#ca8a04"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                  />
+                  <path d="M44 24 L76 24 L70 30 L50 30 Z" fill="#854d0e" />
+                  <!-- Glass body -->
+                  <path
+                    d="M48 32 L72 32 L68 62 L52 62 Z"
+                    stroke="#ca8a04"
+                    stroke-width="1.4"
+                    fill="#451a03"
+                  />
+                  <!-- Inner radiant flame -->
+                  <circle cx="60" cy="46" r="14" fill="url(#polaroidLampGlow)" opacity="0.85" />
+                  <ellipse cx="60" cy="47" rx="3.5" ry="6" fill="#ffffff" />
+                  <!-- Base -->
+                  <rect
+                    x="46"
+                    y="62"
+                    width="28"
+                    height="5"
+                    rx="1.5"
+                    fill="#713f12"
+                    stroke="#a16207"
+                  />
+                  <!-- Beams -->
+                  <path
+                    d="M36 38 L28 34 M84 38 L92 34 M36 54 L28 58 M84 54 L92 58"
+                    stroke="#fde047"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <defs>
+                    <radialGradient id="polaroidLampGlow">
+                      <stop offset="0%" stop-color="#ffffff" />
+                      <stop offset="40%" stop-color="#fde047" />
+                      <stop offset="100%" stop-color="transparent" />
+                    </radialGradient>
+                  </defs>
+                </svg>
+              </div>
+
+              <span
+                class="absolute bottom-1 right-1.5 text-[9px] font-sans font-semibold text-amber-300/90 bg-black/70 px-1 py-0.5 rounded"
+              >
+                W4
+              </span>
+            </div>
+
+            <!-- Polaroid Handwritten Caption -->
+            <div class="pt-2 text-center">
+              <p
+                class="font-handwriting text-base text-stone-900 font-bold leading-tight group-hover:text-amber-800 transition-colors"
+              >
+                The Golden Lamp
+              </p>
+              <p class="text-[10px] text-stone-500 font-sans tracking-tight">Pulled from dark</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Gentle interaction helper -->
+        <p class="text-[11px] text-amber-400/60 font-serif italic mt-3 text-center">
+          Tap any snapshot for the memory, or lift the lamp to illuminate all four
+        </p>
+      </section>
+
+      <!-- MODAL: Snapshot Memory Lightbox -->
+      <div
+        id="snapshotModal"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Snapshot Memory Detail"
+        class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4 transition-all duration-300 opacity-0"
+      >
+        <div
+          id="snapshotModalCard"
+          class="relative w-full max-w-sm bg-stone-100 text-stone-900 rounded-sm p-4 sm:p-5 shadow-2xl border border-stone-300 transform scale-95 transition-transform duration-300"
+        >
+          <!-- Close button -->
+          <button
+            id="closeSnapshotModalBtn"
+            type="button"
+            class="absolute top-2 right-2 w-7 h-7 rounded-full bg-stone-200 hover:bg-stone-300 text-stone-700 flex items-center justify-center text-xs font-bold transition-colors cursor-pointer"
+            aria-label="Close snapshot modal"
+          >
+            ✕
+          </button>
+
+          <!-- Tape badge on modal polaroid -->
+          <div
+            class="w-12 h-4 bg-[#FFD100]/40 border border-[#FFD100]/60 rounded-xs mx-auto -mt-6 mb-3 shadow-xs"
+          ></div>
+
+          <div
+            id="modalPhotoHolder"
+            class="aspect-[4/3] w-full rounded-xs overflow-hidden bg-neutral-950 border border-stone-300 flex items-center justify-center relative shadow-inner"
+          ></div>
+
+          <div class="mt-4 text-center">
+            <span
+              id="modalWeekTag"
+              class="text-[11px] uppercase tracking-widest text-[#cca700] font-bold"
+            ></span>
+            <h3 id="modalTitle" class="font-handwriting text-2xl font-bold text-stone-900 mt-0.5"></h3>
+            <p id="modalQuote" class="font-serif italic text-sm text-stone-700 mt-2 leading-relaxed px-2"></p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-stone-200 flex items-center justify-between text-xs text-stone-500">
+            <span id="modalDate"></span>
+            <span class="text-[#997d00] font-medium">Memory #1</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE CONTROLS SECTION -->
+      <section class="w-full max-w-2xl mt-8 flex flex-col items-center">
+        
+        <!-- "Lift the Lamp" Toggle Button -->
+        <div class="relative group">
+          <!-- Button Ambient Backlight -->
+          <div
+            id="buttonAura"
+            class="absolute -inset-1 bg-gradient-to-r from-amber-600 via-[#FFD100] to-amber-600 rounded-full blur-md opacity-70 group-hover:opacity-100 transition duration-500 animate-pulse-slow"
+          ></div>
+
+          <button
+            id="liftLampBtn"
+            type="button"
+            class="relative flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-4 bg-[#FFD100] text-[#202020] font-extrabold text-base sm:text-lg rounded-full shadow-xl shadow-[#FFD100]/30 hover:shadow-[#FFD100]/50 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 cursor-pointer"
+          >
+            <span id="btnIcon" class="text-xl sm:text-2xl transition-transform duration-300 group-hover:rotate-12">💡</span>
+            <span id="btnText" class="tracking-wide">Lift the Lamp</span>
+          </button>
+        </div>
+
+        <p class="text-xs text-stone-400 mt-3 font-serif italic text-center">
+          Tap to ignite the golden light and reveal a heartfelt secret note
+        </p>
+
+        <!-- HIDDEN PERSONAL THANK-YOU MESSAGE (Revealed on Lamp Lift) -->
+        <div
+          id="secretMessageContainer"
+          class="w-full mt-8 overflow-hidden transition-all duration-1000 ease-out max-h-0 opacity-0 translate-y-4 pointer-events-none"
+        >
+          <div
+            class="relative rounded-3xl p-7 sm:p-9 backdrop-blur-xl bg-[#202020]/95 border border-[#FFD100]/40 shadow-2xl shadow-black/80 text-stone-200"
+          >
+            <!-- Wax Seal / Golden Stamp Emblem -->
+            <div class="flex items-center justify-between border-b border-[#FFD100]/25 pb-4 mb-5">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-[#FFD100] shadow-[0_0_8px_#FFD100]"></span>
+                <span class="text-xs uppercase tracking-widest text-[#FFD100] font-semibold">
+                  Personal Note to Irene
+                </span>
+              </div>
+              <span class="text-xs text-[#FFD100]/75 font-serif italic">
+                Month One Milestone
+              </span>
+            </div>
+
+            <!-- Quote Letter Content -->
+            <blockquote class="relative">
+              <span
+                class="absolute -top-3 -left-2 text-4xl sm:text-5xl font-serif text-[#FFD100]/20 select-none pointer-events-none"
+              >“</span>
+              <p
+                class="font-poem text-xl sm:text-2xl text-amber-100/95 leading-relaxed italic pl-3 sm:pl-4 border-l-2 border-[#FFD100]/60"
+              >
+                Thank you for being my constant support, listening to every rant, and bringing so much sunshine into my life over the past month. I'm so glad we took this road together.
+              </p>
+            </blockquote>
+
+            <!-- Note Footer with Sign-off and Heart -->
+            <div class="mt-6 pt-4 border-t border-[#FFD100]/20 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm">
+              <div class="flex items-center gap-2 text-[#FFD100]">
+                <span>With all my love & gratitude,</span>
+                <span class="text-[#FFD100]">💛</span>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-stone-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#FFD100]/70"></span>
+                <span>Four weeks down, forever more light ahead</span>
+              </div>
+            </div>
+
+            <!-- Quick Action: Re-celebrate / Spark Confetti -->
+            <div class="mt-5 text-center">
+              <button
+                id="confettiMoreBtn"
+                type="button"
+                class="inline-flex items-center gap-1.5 text-xs text-[#FFD100] hover:text-yellow-200 font-medium px-4 py-1.5 rounded-full bg-[#FFD100]/10 hover:bg-[#FFD100]/20 border border-[#FFD100]/30 transition-all cursor-pointer"
+              >
+                <span>✨ Shower More Sparks</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- FOOTER: Quiet, elegant credit -->
+      <footer class="mt-16 sm:mt-24 text-center text-xs text-stone-500 font-serif flex flex-col items-center gap-2">
+        <p>Crafted with warmth & golden light for Irene</p>
+        <p class="text-[11px] text-stone-600">Celebrating four weeks of shared laughter and understanding</p>
+      </footer>
+    </main>
+
+    <!-- VANILLA JAVASCRIPT LOGIC -->
+    <script>
+      (function () {
+        'use strict';
+
+        // DOM Elements
+        const liftLampBtn = document.getElementById('liftLampBtn');
+        const btnIcon = document.getElementById('btnIcon');
+        const btnText = document.getElementById('btnText');
+        const poemContainer = document.getElementById('poemContainer');
+        const secretMessageContainer = document.getElementById('secretMessageContainer');
+        const lanternCore = document.getElementById('lanternCore');
+        const lanternHalo = document.getElementById('lanternHalo');
+        const lanternVisual = document.getElementById('lanternVisual');
+        const lampStatusIndicator = document.getElementById('lampStatusIndicator');
+        const dynamicAmbientGlow = document.getElementById('dynamicAmbientGlow');
+        const confettiMoreBtn = document.getElementById('confettiMoreBtn');
+        const soundToggleBtn = document.getElementById('soundToggleBtn');
+        const soundIcon = document.getElementById('soundIcon');
+        const soundLabel = document.getElementById('soundLabel');
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        const titleHeartsContainer = document.getElementById('titleHeartsContainer');
+
+        // State
+        let isLampLifted = false;
+        let soundEnabled = true;
+        let audioCtx = null;
+        let heartSpawnInterval = null;
+
+        // Function that spawns a small, drifting golden heart around 'For Irene'
+        function spawnDriftingHeart() {
+          if (!isLampLifted || !titleHeartsContainer) return;
+
+          const heart = document.createElement('div');
+          heart.className = 'drifting-heart';
+
+          // Size: 13px to 22px
+          const size = Math.floor(Math.random() * 10) + 13;
+          heart.style.width = `${size}px`;
+          heart.style.height = `${size}px`;
+
+          // Horizontal spawn range across the title text (3% to 97%)
+          const posX = Math.random() * 94 + 3;
+          // Vertical spawn position near the lower half / baseline of the title
+          const posY = Math.random() * 35 + 40;
+          heart.style.left = `${posX}%`;
+          heart.style.top = `${posY}%`;
+
+          // Randomized drift trajectories and micro-rotations
+          const duration = (Math.random() * 1.3 + 2.5).toFixed(2); // 2.5s to 3.8s
+          const driftX1 = (Math.random() * 22 - 11).toFixed(1);
+          const driftX2 = (Math.random() * 36 - 18).toFixed(1);
+          const driftX3 = (Math.random() * 46 - 23).toFixed(1);
+          const rotStart = (Math.random() * 28 - 14).toFixed(1);
+          const rotMid = (Math.random() * 36 - 18).toFixed(1);
+          const rotMid2 = (Math.random() * 36 - 18).toFixed(1);
+          const rotEnd = (Math.random() * 46 - 23).toFixed(1);
+
+          heart.style.setProperty('--duration', `${duration}s`);
+          heart.style.setProperty('--drift-x1', `${driftX1}px`);
+          heart.style.setProperty('--drift-x2', `${driftX2}px`);
+          heart.style.setProperty('--drift-x3', `${driftX3}px`);
+          heart.style.setProperty('--rot-start', `${rotStart}deg`);
+          heart.style.setProperty('--rot-mid', `${rotMid}deg`);
+          heart.style.setProperty('--rot-mid2', `${rotMid2}deg`);
+          heart.style.setProperty('--rot-end', `${rotEnd}deg`);
+
+          // Golden shades palette centered around #FFD100
+          const goldColors = ['#FFD100', '#fff066', '#ffe633', '#ffffff', '#FFD100'];
+          const chosenColor = goldColors[Math.floor(Math.random() * goldColors.length)];
+          heart.style.color = chosenColor;
+
+          // 85% heart, 15% delicate golden star sparkle
+          const isStar = Math.random() < 0.15;
+          if (isStar) {
+            heart.innerHTML = `
+              <svg viewBox="0 0 24 24" class="w-full h-full" fill="currentColor">
+                <path d="M12 2l2.4 6.9 6.9 2.4-6.9 2.4L12 20.6l-2.4-6.9L2.7 11.3l6.9-2.4L12 2z"/>
+              </svg>
+            `;
+          } else {
+            heart.innerHTML = `
+              <svg viewBox="0 0 24 24" class="w-full h-full" fill="currentColor">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            `;
+          }
+
+          titleHeartsContainer.appendChild(heart);
+
+          // Clean up element on animation finish
+          heart.addEventListener('animationend', () => {
+            heart.remove();
+          });
+          // Fallback safety timeout
+          setTimeout(() => {
+            if (heart.parentNode) heart.remove();
+          }, parseFloat(duration) * 1000 + 400);
+        }
+
+        // Start periodic spawning of drifting golden hearts
+        function startHeartSpawner() {
+          if (heartSpawnInterval) {
+            clearInterval(heartSpawnInterval);
+          }
+          // Immediate initial burst of hearts around the title
+          spawnDriftingHeart();
+          setTimeout(spawnDriftingHeart, 120);
+          setTimeout(spawnDriftingHeart, 260);
+          setTimeout(spawnDriftingHeart, 420);
+
+          // Periodic continuous spawn while lamp is lifted (every 580ms)
+          heartSpawnInterval = setInterval(spawnDriftingHeart, 580);
+        }
+
+        // Stop periodic spawning
+        function stopHeartSpawner() {
+          if (heartSpawnInterval) {
+            clearInterval(heartSpawnInterval);
+            heartSpawnInterval = null;
+          }
+        }
+
+        // Audio synthesizer: warm golden harp/chime arpeggio
+        function playChime(intense = false) {
+          if (!soundEnabled) return;
+          try {
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+            if (!audioCtx) {
+              audioCtx = new AudioContext();
+            }
+            if (audioCtx.state === 'suspended') {
+              audioCtx.resume();
+            }
+
+            // Musical chords: E major / Amber light chords (E4, G#4, B4, E5, G#5)
+            const freqs = intense
+              ? [329.63, 415.30, 493.88, 659.25, 830.61, 987.77]
+              : [329.63, 415.30, 493.88, 659.25];
+
+            freqs.forEach((freq, idx) => {
+              const osc = audioCtx.createOscillator();
+              const gain = audioCtx.createGain();
+
+              osc.type = 'sine';
+              osc.frequency.setValueAtTime(freq, audioCtx.currentTime + idx * 0.08);
+
+              // Smooth attack and long warm decay
+              gain.gain.setValueAtTime(0, audioCtx.currentTime + idx * 0.08);
+              gain.gain.linearRampToValueAtTime(0.18, audioCtx.currentTime + idx * 0.08 + 0.04);
+              gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + idx * 0.08 + 1.8);
+
+              osc.connect(gain);
+              gain.connect(audioCtx.destination);
+
+              osc.start(audioCtx.currentTime + idx * 0.08);
+              osc.stop(audioCtx.currentTime + idx * 0.08 + 1.9);
+            });
+          } catch (e) {
+            console.log('Audio contextual note:', e);
+          }
+        }
+
+        // Toggle sound preference
+        soundToggleBtn.addEventListener('click', () => {
+          soundEnabled = !soundEnabled;
+          soundIcon.textContent = soundEnabled ? '🔔' : '🔕';
+          soundLabel.textContent = soundEnabled ? 'Chime Active' : 'Muted';
+          if (soundEnabled) {
+            playChime(false);
+          }
+        });
+
+        // Fire Confetti with rich golden palette
+        function fireGoldenConfetti() {
+          if (typeof confetti !== 'function') return;
+
+          const goldColors = ['#FFD100', '#fff380', '#ffffff', '#cca700', '#202020'];
+
+          // First wave: center burst
+          confetti({
+            particleCount: 75,
+            spread: 90,
+            origin: { y: 0.65 },
+            colors: goldColors,
+            ticks: 240,
+            gravity: 0.9,
+            scalar: 1.1,
+          });
+
+          // Second wave: side sparkling cannons
+          setTimeout(() => {
+            confetti({
+              particleCount: 50,
+              angle: 60,
+              spread: 65,
+              origin: { x: 0.1, y: 0.7 },
+              colors: goldColors,
+              ticks: 260,
+            });
+            confetti({
+              particleCount: 50,
+              angle: 120,
+              spread: 65,
+              origin: { x: 0.9, y: 0.7 },
+              colors: goldColors,
+              ticks: 260,
+            });
+          }, 200);
+
+          // Star shape burst
+          setTimeout(() => {
+            confetti({
+              particleCount: 30,
+              spread: 120,
+              origin: { y: 0.55 },
+              shapes: ['star', 'circle'],
+              colors: ['#FFD100', '#fff480', '#ffffff'],
+              scalar: 1.25,
+            });
+          }, 450);
+        }
+
+        // Toggle the Lamp Function
+        function toggleLamp() {
+          isLampLifted = !isLampLifted;
+
+          if (isLampLifted) {
+            // Apply lifted state
+            document.body.classList.add('lamp-active');
+            poemContainer.classList.add('lamp-active');
+
+            // Lantern styling
+            lanternCore.classList.remove('from-amber-600', 'via-amber-400', 'to-yellow-100');
+            lanternCore.classList.add(
+              'from-yellow-100',
+              'via-[#FFD100]',
+              'to-white',
+              'shadow-[0_0_35px_#FFD100]'
+            );
+            lanternHalo.classList.remove('bg-[#FFD100]/0');
+            lanternHalo.classList.add('bg-[#FFD100]/40', 'scale-150');
+            lampStatusIndicator.textContent = 'Golden Light Raised';
+            lampStatusIndicator.classList.remove('text-[#FFD100]/70');
+            lampStatusIndicator.classList.add('text-[#FFD100]', 'font-bold');
+
+            // Ambient glow behind container
+            dynamicAmbientGlow.classList.remove('bg-[#FFD100]/0');
+            dynamicAmbientGlow.classList.add('bg-[#FFD100]/20');
+
+            // Button update
+            btnIcon.textContent = '✨';
+            btnText.textContent = 'Lamp is Shining';
+            liftLampBtn.classList.remove('bg-[#FFD100]');
+            liftLampBtn.classList.add('bg-yellow-200');
+
+            // Reveal hidden secret message
+            secretMessageContainer.classList.remove('max-h-0', 'opacity-0', 'translate-y-4', 'pointer-events-none');
+            secretMessageContainer.classList.add('max-h-[600px]', 'opacity-100', 'translate-y-0');
+
+            // Trigger celebratory effects
+            fireGoldenConfetti();
+            playChime(true);
+            startHeartSpawner();
+
+            // Smooth scroll gently to reveal the note if needed
+            setTimeout(() => {
+              secretMessageContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 300);
+
+          } else {
+            // Lower the lamp
+            document.body.classList.remove('lamp-active');
+            poemContainer.classList.remove('lamp-active');
+
+            lanternCore.classList.add('from-amber-600', 'via-amber-400', 'to-yellow-100');
+            lanternCore.classList.remove(
+              'from-yellow-100',
+              'via-[#FFD100]',
+              'to-white',
+              'shadow-[0_0_35px_#FFD100]'
+            );
+            lanternHalo.classList.add('bg-[#FFD100]/0');
+            lanternHalo.classList.remove('bg-[#FFD100]/40', 'scale-150');
+            lampStatusIndicator.textContent = 'Gentle Ember';
+            lampStatusIndicator.classList.add('text-[#FFD100]/70');
+            lampStatusIndicator.classList.remove('text-[#FFD100]', 'font-bold');
+
+            dynamicAmbientGlow.classList.add('bg-[#FFD100]/0');
+            dynamicAmbientGlow.classList.remove('bg-[#FFD100]/20');
+
+            btnIcon.textContent = '💡';
+            btnText.textContent = 'Lift the Lamp';
+            liftLampBtn.classList.add('bg-[#FFD100]');
+            liftLampBtn.classList.remove('bg-yellow-200');
+
+            // Hide secret message
+            secretMessageContainer.classList.add('max-h-0', 'opacity-0', 'translate-y-4', 'pointer-events-none');
+            secretMessageContainer.classList.remove('max-h-[600px]', 'opacity-100', 'translate-y-0');
+
+            // Stop periodic hearts around 'For Irene'
+            stopHeartSpawner();
+          }
+        }
+
+        // Polaroid Lightbox Modal Elements
+        const snapshotModal = document.getElementById('snapshotModal');
+        const snapshotModalCard = document.getElementById('snapshotModalCard');
+        const closeSnapshotModalBtn = document.getElementById('closeSnapshotModalBtn');
+        const modalPhotoHolder = document.getElementById('modalPhotoHolder');
+        const modalWeekTag = document.getElementById('modalWeekTag');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalQuote = document.getElementById('modalQuote');
+        const modalDate = document.getElementById('modalDate');
+
+        // Open Polaroid Lightbox
+        function openSnapshotModal(card) {
+          const week = card.getAttribute('data-week');
+          const title = card.getAttribute('data-title');
+          const date = card.getAttribute('data-date');
+          const quote = card.getAttribute('data-quote');
+          const photoHtml = card.querySelector('.relative.aspect-\\[4\\/3\\]').innerHTML;
+
+          modalWeekTag.textContent = week;
+          modalTitle.textContent = title;
+          modalDate.textContent = date;
+          modalQuote.textContent = `“${quote}”`;
+          modalPhotoHolder.innerHTML = photoHtml;
+
+          snapshotModal.classList.remove('hidden');
+          snapshotModal.classList.add('flex');
+          // Force reflow for fade in
+          void snapshotModal.offsetWidth;
+          snapshotModal.classList.remove('opacity-0');
+          snapshotModalCard.classList.remove('scale-95');
+          snapshotModalCard.classList.add('scale-100');
+
+          playChime(false);
+        }
+
+        // Close Polaroid Lightbox
+        function closeSnapshotModal() {
+          snapshotModal.classList.add('opacity-0');
+          snapshotModalCard.classList.remove('scale-100');
+          snapshotModalCard.classList.add('scale-95');
+          setTimeout(() => {
+            snapshotModal.classList.add('hidden');
+            snapshotModal.classList.remove('flex');
+          }, 300);
+        }
+
+        // Attach click to all polaroid cards
+        document.querySelectorAll('.polaroid-card').forEach((card) => {
+          card.addEventListener('click', () => {
+            openSnapshotModal(card);
+          });
+        });
+
+        if (closeSnapshotModalBtn) {
+          closeSnapshotModalBtn.addEventListener('click', closeSnapshotModal);
+        }
+        if (snapshotModal) {
+          snapshotModal.addEventListener('click', (e) => {
+            if (e.target === snapshotModal) {
+              closeSnapshotModal();
+            }
+          });
+        }
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && snapshotModal && !snapshotModal.classList.contains('hidden')) {
+            closeSnapshotModal();
+          }
+        });
+
+        // Event Listeners
+        liftLampBtn.addEventListener('click', toggleLamp);
+        lanternVisual.addEventListener('click', toggleLamp);
+
+        confettiMoreBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          fireGoldenConfetti();
+          playChime(false);
+        });
+
+        // Background Particle Stardust Canvas
+        let particles = [];
+        const particleCount = 45;
+
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        class Particle {
+          constructor() {
+            this.reset();
+          }
+          reset() {
+            this.x = Math.random() * canvas.width;
+            this.y = Math.random() * canvas.height;
+            this.size = Math.random() * 2 + 0.8;
+            this.speedX = (Math.random() - 0.5) * 0.3;
+            this.speedY = -(Math.random() * 0.4 + 0.15);
+            this.opacity = Math.random() * 0.6 + 0.2;
+            this.color = Math.random() > 0.3 ? '255, 209, 0' : '255, 235, 128';
+          }
+          update() {
+            this.x += this.speedX;
+            // Float upward slightly faster if lamp is shining
+            this.y += isLampLifted ? this.speedY * 1.8 : this.speedY;
+
+            if (this.y < 0) this.y = canvas.height;
+            if (this.x < 0) this.x = canvas.width;
+            if (this.x > canvas.width) this.x = 0;
+          }
+          draw() {
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(${this.color}, ${isLampLifted ? Math.min(1, this.opacity + 0.3) : this.opacity})`;
+            ctx.shadowBlur = isLampLifted ? 8 : 4;
+            ctx.shadowColor = `rgba(${this.color}, 0.8)`;
+            ctx.fill();
+          }
+        }
+
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+
+        function animateParticles() {
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+          particles.forEach((p) => {
+            p.update();
+            p.draw();
+          });
+          requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // Optional interactive click sparkles
+        window.addEventListener('pointerdown', (e) => {
+          // If clicking background, spawn mini sparkle
+          if (
+            e.target.tagName !== 'BUTTON' &&
+            e.target.tagName !== 'A' &&
+            !e.target.closest('#poemContainer')
+          ) {
+            for (let i = 0; i < 4; i++) {
+              const p = new Particle();
+              p.x = e.clientX + (Math.random() - 0.5) * 20;
+              p.y = e.clientY + (Math.random() - 0.5) * 20;
+              p.speedY = -Math.random() * 1.5;
+              p.opacity = 0.9;
+              particles.push(p);
+              if (particles.length > 70) particles.shift();
+            }
+          }
+        });
+
+      })();
+    </script>
+  </body>
+</html>
